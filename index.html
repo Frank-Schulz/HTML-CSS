@@ -8,27 +8,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body id="homePage">
 
         <div id="header">
             <h2>Scroll Down</h2>
             <p>Scroll down to see the sticky effect.</p>
         </div>
 
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
+        <ul id="navbar">
+            <li><a class="btn current" href="index.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Services</a>
+                <a class="dropbtn" href="javascript:void(0)">Services</a>
                 <div class="dropdown-content">
                   <a href="#">Service 1</a>
                   <a href="#">Service 2</a>
                   <a href="#">Service 3</a>
                 </div>
             </li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li style="float: right"><a href="#signup">Signup</a></li>
+            <li><a class="btn" href="gallery.html">Gallery</a></li>
+            <li><a class="btn" href="#contact">Contact</a></li>
+            <li><a class="btn" href="#about">About</a></li>
+
+            <li style="float: right"><a class="btn" href="#signup">Signup</a></li>
         </ul>
+        
         
         <div style="padding:20px;margin-top:30px;"></div>
 
@@ -44,6 +47,9 @@
         </div>
 
         <footer id="footer">This is a footer</footer>
+        
         <!-- <script src="" async defer></script> -->
+        <script src="index.js"></script>
+        
     </body>
 </html>

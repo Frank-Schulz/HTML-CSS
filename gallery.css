@@ -85,59 +85,47 @@ li a, .dropbtn {
   }
 /* End of Nav Bar */
 
+/* Start of gallery page */
 
-/* Start of landing page */
-#homePage {
+#galleryPage {
     margin: 0;
-    background-color: black;
-}
-
-/* Start of Main Body */
-
-#header{
-    color: orchid ;
-    font-size: 3rem;
-    text-align: center;
-}
-
-#text-colour {
-    color: rgb(156, 80, 80);
-    text-align: center;
-}
-
-.text-colour{
-    color: orange;
-    text-align: center;
-}
-
-#block1 {
-    font-size: 1.5rem;
-    color: greenyellow;
-    text-align: center;
-}
-
-#block2{
-    text-align: center;
-    color: white;
-    font: message-box;
-    font-style: italic;
+    background-color: grey;
 }
 
 img {
     display: block;
-    height: 406.4px;
-    width: 508px;
+    height: 180px;
+    width: 300px;
     margin-top: 5px;
     margin-right: auto;
     margin-bottom: 5px;
     margin-left: auto;
 }
 
-/* Footer */
-
-#footer {
-    font-size: 1.5rem;
-    color: lightgray;
-    text-align: center;
+.container {
+    width: 60%;
+    margin: 2rem auto;
 }
-/* End of landing page */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 10vw);
+    grid-gap: 1.5rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* End of gallery page */
